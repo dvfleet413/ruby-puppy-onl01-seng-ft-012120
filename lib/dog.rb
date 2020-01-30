@@ -1,6 +1,5 @@
 # Add your code here
 require 'pry'
-
 class Dog 
   attr_reader :name
   @@all = []
@@ -17,6 +16,7 @@ class Dog
   def self.print_all
     Dog.all.each do |dog|
       puts "#{dog.name}"
+      binding.pry
     end
   end
   
